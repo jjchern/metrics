@@ -7,4 +7,4 @@ RUN install2.r --error \
   pander \
   && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
   
-RUN RDscript -e 'devtools::install_github("jjchern/ec300")'
+RUN R -q --vanilla 'devtools::install_github("jjchern/ec300")'
